@@ -1,23 +1,23 @@
 from Animal import Animal
 
-class Cachorro(Animal):
+class Dog(Animal):
 
-    def __init__(self,raca, nome, peso, habitat):
-        self.raca = raca
-        super(Cachorro, self).__init__(nome, peso, habitat)
+    def __init__(self, breed, name, weight, habitat):
+        self.breed = breed
+        super(Dog, self).__init__(name, weight, habitat)
 
-    def brincar(self):
-        print(self.nome + " brincando ")
+    def play(self):
+        print(self.name + " playing ")
 
-    def vigiar(self):
-        print(self.nome + " vigiando ")
+    def guard(self):
+        print(self.name + " guarding ")
 
     def __str__(self):
-        return "Cachorro: %s" % self.nome
+        return "Dog: %s" % self.name
 
-c = Cachorro("Chiuaua", "Bolinha", 5, "Casa")
+niceDog = Dog("Chiuaua", "Bolinha", 5, "Casa")
 
 
-print(c)
+print(niceDog)
 
-c.vigiar()
+niceDog.guard()
