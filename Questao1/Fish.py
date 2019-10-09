@@ -1,7 +1,7 @@
 from Animal import Animal
 from Tail import Tail
 
-class Peixe(Animal):
+class Fish(Animal):
 
     def __init__(self, type):
         self.tail = Tail(type)
