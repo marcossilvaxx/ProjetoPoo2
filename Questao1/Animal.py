@@ -1,14 +1,14 @@
 class Animal:
-    def __init__(self, nome, peso, habitat):
-        self.nome = nome
-        self.peso = peso
+    def __init__(self, name, weight, habitat):
+        self.name = name
+        self.weight = weight
         self.habitat = habitat
 
-    def mover(self):
-         print("Movendo genericamente")
+    def move(self):
+         print("Moving generically")
 
-    def comunicar(self):
-        print("Comunicando genericamente")
+    def comunicates(self):
+        print("Communicating generically")
 
     def __str__(self):
-        return "Animal: %s" % self.nome
+        return "Animal: %s" % self.name
